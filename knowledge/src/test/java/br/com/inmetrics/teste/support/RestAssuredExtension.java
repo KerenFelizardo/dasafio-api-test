@@ -19,7 +19,7 @@ public class RestAssuredExtension {
 		RequestSpecBuilder builder = new RequestSpecBuilder();
 		builder.setBaseUri("inm-api-test.herokuapp.com");
 		builder.setContentType(ContentType.JSON);
-		var requestSpec = builder.build();
+		RequestSpecification requestSpec = builder.build();
 		Request = RestAssured.given().spec(requestSpec);
 	}
 	
